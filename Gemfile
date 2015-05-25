@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.2.2'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
@@ -15,6 +15,8 @@ gem 'pundit', '~> 1.0.0'
 gem 'bcrypt', '~> 3.1.10'
 gem 'passenger', '~> 5.0.7'
 gem 'foundation-rails', '~> 5.5.2.1'
+
+gem 'rails_12factor', group: :production
 
 group :development, :test do
   gem 'byebug'
