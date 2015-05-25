@@ -29,4 +29,7 @@ group :development, :test do
   gem 'pry-rails', '~> 0.3.4'
   gem 'pry-rescue', '~> 1.4.2'
   gem 'launchy', '~> 2.4.3'
+  gem 'terminal-notifier', '~> 1.6.3'
+  gem 'terminal-notifier-guard', '~> 1.6.4'
+  gem 'awesome_print', require: 'ap'
 end
