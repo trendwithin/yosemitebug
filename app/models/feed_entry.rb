@@ -5,6 +5,16 @@ validates :title, :published_at, :content, presence: true
     add_entries(feed.entries)
   end
 
+  # def self.update_from_feed_continuously(feed_url, delay_interval = 1.day)
+  #   feed = Feedjira::Feed.fetch_and_parse(feed_url)
+  #   add_entries(feed.entries)
+  #   loop do
+  #     sleep delay_interval
+  #     feed = Feedjira::Feed.upated(feed_url)
+  #     add_entries(feed.new_entries) if feed.updated?
+  #   end
+  # end
+
   private
 
   def self.add_entries(entries)
