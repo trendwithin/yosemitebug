@@ -3,7 +3,7 @@ require "test_helper"
 class FeedEntryTest < ActiveSupport::TestCase
 
   def feed_entry
-    @feed_entry ||= FeedEntry.new(published: Time.now, title: "New Title", content: "This is some content")
+    @feed_entry ||= FeedEntry.new(published_at: Time.now, title: "New Title", content: "This is some content")
   end
 
   def test_valid
