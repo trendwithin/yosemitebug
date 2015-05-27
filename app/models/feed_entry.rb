@@ -21,9 +21,9 @@ validates :title, :published_at, :content, presence: true
     entries.each do |entry|
       unless exists? title: entry.title
         create!(
-          published_at: entry.published,
-          title: entry.title,
-          content: entry.content
+          published_at: entry.published.sanitize,
+          title: entry.title.sanitize,
+          content: entry.content.sanitize
           )
       end
     end
