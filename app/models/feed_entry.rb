@@ -1,5 +1,5 @@
 class FeedEntry < ActiveRecord::Base
-validates :title, :published, :content, presence: true
+validates :title, :published_at, :content, presence: true
   def self.update_from_feed(feed_url)
     feed = Feedjira::Feed.fetch_and_parse(feed_url)
     add_entries(feed.entries)
@@ -11,7 +11,7 @@ validates :title, :published, :content, presence: true
     entries.each do |entry|
       unless exists? title: entry.title
         create!(
-          published: entry.published,
+          published_at: entry.published,
           title: entry.title,
           content: entry.content
           )

@@ -21,7 +21,7 @@ class FeedEntryTest < ActiveSupport::TestCase
   end
 
   test 'empty published at is invalid' do
-    feed_entry.published = ''
+    feed_entry.published_at = ''
     assert_not feed_entry.valid?
   end
 end
