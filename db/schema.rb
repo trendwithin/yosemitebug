@@ -17,11 +17,11 @@ ActiveRecord::Schema.define(version: 20150527025609) do
   enable_extension "plpgsql"
 
   create_table "feed_entries", force: :cascade do |t|
-    t.string   "published"
+    t.datetime "published_at"
     t.string   "title"
     t.string   "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   add_index "feed_entries", ["id"], name: "index_feed_entries_on_id", using: :btree

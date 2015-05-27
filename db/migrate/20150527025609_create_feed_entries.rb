@@ -1,7 +1,7 @@
 class CreateFeedEntries < ActiveRecord::Migration
   def change
     create_table :feed_entries do |t|
-      t.string :published
+      t.datetime :published_at
       t.string :title
       t.string :content
 
