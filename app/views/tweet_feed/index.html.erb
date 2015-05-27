@@ -1,0 +1,6 @@
+<h1>Tweet#index</h1>
+
+Hello <% @timeline.each do |tweet| %>
+<blockquote> <%= auto_link(tweet.text, :target => '_blank').html_safe %> </blockquote>
+<div class="from">&mdash; @<%= tweet.user %></div>
+<% end %>
