@@ -15,12 +15,13 @@ gem 'pundit', '~> 1.0.0'
 gem 'bcrypt', '~> 3.1.10'
 gem 'passenger', '~> 5.0.7'
 gem 'foundation-rails', '~> 5.5.2.1'
+gem 'feedjira', '~> 1.6.0'
 
 gem 'rails_12factor', group: :production
 
 group :development, :test do
   gem 'byebug'
-  gem 'spring'
+  # gem 'spring'
   gem 'web-console', '~> 2.0'
   gem 'guard', '~> 2.12.5'
   gem 'guard-minitest', '~> 2.4.4'
