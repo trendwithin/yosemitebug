@@ -29,13 +29,14 @@
     <img src="http://placehold.it/400x300&text=[img]">
   </div>
   <div class="large-5 columns">
-    <img src="http://placehold.it/400x500">
+
+  <%= image_tag('cafe_diner.JPG', alt: 'Description', 'data-interchange' => "[#{image_path('cafe_diner.JPG')}, (retina)]") %>
   </div>
   <div class="large-5 columns">
-    <h4>This will be a blog section</h4>
+    <h4>Latest News:</h4>
     <div class="panel">
-      <h5>This will be a title</h5>
-    <h6 class="subheader">This will be some content</h6>
+      <h5> <%= @article.title %> </h5>
+    <h6 class="subheader"> <%= truncate( @article.content, length: 700, separator: " ", :escape => false) %> </h6>
     <a href="#" class="small button">Read More</a>
     </div>
 
