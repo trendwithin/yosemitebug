@@ -7,8 +7,4 @@ one:
   content: MyText
   id: MyString
 
-two:
-  tweet_id: MyString
-  screen_name: MyString
-  content: MyText
-  id: MyString
+
