@@ -16,3 +16,7 @@
 
  */
 @import "foundation_and_overrides";
+body { background: #eeeeee; }
+.top-bar { background: #999999;}
+.dropdown { background: #44aaff;}
+.top-bar-section li:not(.has-form) a:not(.button) { background: #44aaff; }
