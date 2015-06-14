@@ -1,14 +1,20 @@
 # Read about fixtures at
 # http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  item: MyString
-  description: MyText
-  price: MyString
-  meal: MyString
+breakfast:
+  item: Bacon and Eggs
+  description: Local Boar Bacon with Free Range Fliers
+  price: $6.95
+  meal: breakfast
 
-two:
-  item: MyString
-  description: MyText
-  price: MyString
-  meal: MyString
+lunch:
+  item: Trail Sammy
+  description: Individually wrapped items to pack for trail...
+  price: $8.95
+  meal: lunch
+
+dinner:
+  item: Pan Fried Trout
+  description: Pan fried panko crusted trout with....
+  price: $16.95
+  meal: dinner
