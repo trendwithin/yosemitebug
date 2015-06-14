@@ -10,4 +10,11 @@ class UserTest < ActiveSupport::TestCase
     assert user.valid?
   end
 
+  test 'user is admin' do
+    assert user.valid? if user.role == 'admin'
+  end
+
+  test 'non-admin role is currently invalid' do
+    assert_not user.valid? if user.role != 'admin'
+  end
 end
