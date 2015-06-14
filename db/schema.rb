@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150527180134) do
+ActiveRecord::Schema.define(version: 20150614184131) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,15 @@ ActiveRecord::Schema.define(version: 20150527180134) do
   end
 
   add_index "feed_entries", ["id"], name: "index_feed_entries_on_id", using: :btree
+
+  create_table "menus", force: :cascade do |t|
+    t.string   "item"
+    t.text     "description"
+    t.string   "price"
+    t.string   "meal"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "tweet_feeds", force: :cascade do |t|
     t.string   "tweet_id"
