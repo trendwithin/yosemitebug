@@ -6,6 +6,7 @@
 # below each fixture, per the syntax in the comments below
 #
 admin:
+  id: 1
   name: doogie
   email: doogie@fresh.com
   role: admin
