@@ -1,0 +1,23 @@
+<h1>Menu Items</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Meal
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @menus.each do |m| %>
+    <tr>
+      <td><% m.item %></td>
+      <td><%= m.description %></td>
+      <td><%= m.price %></td>
+      <td><%= m.meal %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
