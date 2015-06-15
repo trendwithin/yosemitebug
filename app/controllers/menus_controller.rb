@@ -1,5 +1,6 @@
 class MenusController < ApplicationController
-  # before_filter :authenticate_user!
+  before_filter :authenticate_user!
+  before_action :set_menu, only:  [:show, :edit, :update, :destroy]
   after_action :verify_authorized
 
   def index
@@ -13,8 +14,9 @@ class MenusController < ApplicationController
   end
 
   def show
-    @menu = Menu.find(params[:id])
-    authorize @menu
+  end
+
+  def edit
   end
 
   def create
@@ -30,8 +32,6 @@ class MenusController < ApplicationController
   end
 
   def update
-    @menu = Menu.find(params[:id])
-    authorize @menu
     respond_to do |format|
       if @menu.update(menu_params)
         format.html { redirect_to @menu, notice: 'Menu Item was successfully updated.' }
@@ -42,9 +42,7 @@ class MenusController < ApplicationController
   end
 
   def destroy
-    @menu = Menu.find(params[:id])
     @menu.destroy
-    authorize @menu
     respond_to do |format|
       format.html { redirect_to menu_url, notice: 'Menu Item was successfully deleted.'}
     end
@@ -52,6 +50,12 @@ class MenusController < ApplicationController
 
 
   private
+
+    def set_menu
+      @menu = Menu.find(params[:id])
+      authorize @menu
+    end
+
     def menu_params
       params.require(:menu).permit(:item, :description, :price, :meal)
     end
