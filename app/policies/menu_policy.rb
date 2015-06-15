@@ -1,6 +1,6 @@
 class MenuPolicy < ApplicationPolicy
   def index?
-    true
+    user.admin?
   end
 
   def show?
