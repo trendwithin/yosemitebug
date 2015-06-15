@@ -3,6 +3,10 @@ class MenuPolicy < ApplicationPolicy
     true
   end
 
+  def show?
+    user.admin?
+  end
+
   def create?
     user.present? && user.admin?
   end
