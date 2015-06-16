@@ -44,7 +44,7 @@ class MenusController < ApplicationController
   def destroy
     @menu.destroy
     respond_to do |format|
-      format.html { redirect_to menu_url, notice: 'Menu Item was successfully deleted.'}
+      format.html { redirect_to menus_url, notice: 'Menu Item was successfully deleted.'}
     end
   end
 
