@@ -1,7 +1,53 @@
 <div class="row">
+    <div class="class large-12 columns">
+    <div class="class large-4 columns">
+      Breakfast
+     <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @breakfast.each do |b| %>
+        <tr>
+          <td><%= b.item %></td>
+          <td><%= b.description %></td>
+          <td><%= b.price %></td>
+        </tr>
+        <% end %>
+      </tbody>
+</table>
+    </div>
+    <div class="class large-8 columns">
+      Carousel of Images
+      <ul class="cafe_orbit" data-orbit>
+        <li>
+          <%= image_tag('cafe_diner.JPG', alt: 'slide 1') %>
+          <div class="orbit-caption">
+            Steak Dinner Test
+          </div>
+           <li>
+          <%#= image_tag('cafe_diner.JPG', alt: 'slide 2') %>
+          <img src="http://lorempixel.com/output/food-q-c-500-375-10.jpg">
+          <div class="orbit-caption">
+            Steak Dinner Test Two
+          </div>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <div class="class large-12 columns">
     <div class="row">
       Breakfast
+      <% @breakfast.each do |b| %>
+      <%= b.item %>
+      <% end %>
     </div>
     <div class="row">
       Description
@@ -29,6 +75,7 @@
     <div class="class large-12 columns">
     <div class="row">
       Lunch
+
     </div>
     <div class="row">
       Description
