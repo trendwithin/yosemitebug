@@ -73,3 +73,13 @@ Menu.create([item: 'Hot Sandwich', description: '-Chicken quesadilla with chedda
              <br>Brie, tomato and basil on a baguette.
              <br>Rueben with housemade corned beef and housemade saurkraut.',
              price: '$9.50', meal: 'dinner'])
+
+Menu.create([item: 'Dessert', description: 'Real Chocolate Cake, Old Fashioned Cheesecake, Carrot Cake, and a selection of homemade pies.  Various flavors of ice cream are also available.',
+             price: '$4.00+', meal: 'dessert'])
+
+Menu.create([item: 'Premium Red & White Wine', description: '14 Hands, WA, Cabernet <br> Echelon Pinot Noir, CA <br> Francis Coppola, CA, Claret<br> Kim Crawford, NZ, Sauvignon Blanc<br> Clos Du Bois, Russian River, Chardonanay',
+            price: '$4.00-$7.00', meal: 'beverage'])
+Menu.create([item: 'Ales and Lagers', description: 'Trumer Pils Berkeley,<br> Brew Free or Die IPA, 21st Amendment S.F.<br> Prohibition Ale, Speakeasy S.F> <br> Seasonal Selection from Prospectors Brewerey, Mariposa CA, <br> Ace Hard Cider <br> Miller Highlife',
+            price: '$2.75-$4.75'], meal: 'beverage')
+Menu.create([item: 'Coffee, Tea, Juice', description: 'Coffee, Tea, Apple/Orange Juice, Soy and Whole Milk, Housemade Hibiscus Punch, Lemondae, Sports Tea, Bottled Water',
+            price: '$2.00+', meal: 'beverage'])
