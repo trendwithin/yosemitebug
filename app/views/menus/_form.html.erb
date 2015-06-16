@@ -23,11 +23,7 @@
     <%= f.label :price %><br>
     <%= f.text_field :price %>
   </div>
-  <select name="Meal">
-    <option>breakfast</option>
-    <option>lunch</option>
-    <option>dinner</option>
-  </select>
+  <%= f.select :meal, ['breakfast', 'lunch', 'dinner'] %>
   <div class="actions">
     <%= f.submit %>
   </div>
