@@ -1,7 +1,77 @@
 <div class="row">
-    <div class="class large-12 columns">
+  <div class="class large-12 columns">
     <div class="class large-5 columns">
-      Breakfast
+      <em>“Ponder well on this point: the pleasant hours of our life are all connected by a more or less tangible link, with some memory of the table.” </em>
+      <br />- Charles Pierre Monselet
+      <br><br>
+
+
+      <p>
+      Thank you for your patronage,
+      <br>
+      Douglas & Caroline
+      </p>
+
+      <p>Prices may not reflect current.  While our breakfast and lunch menu are often
+        consistent, our dinner menu alters every 3 days.  Please view our FaceBook page for an
+        up to date menu.
+     <p>
+    </div>
+
+
+    <div class="class large-7 columns">
+      Accolades: Recently Featured in XYZ magazine!
+      Add Interior/Exterior Images Here?
+    </div>
+  </div>
+    <div class="class large-12 columns">
+      <div class="class large-5 columns">
+        Breakfast
+       <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @breakfast.each do |b| %>
+          <tr>
+            <td><%= b.item %></td>
+            <td><%= b.description.html_safe %></td>
+            <td><%= b.price %></td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+    <div class="class large-7 columns">
+      Carousel of Breakfast Images:
+      <b>BREAKFAST: Served 7AM to 10AM Daily. Vegan Options, too!</b>
+      <ul class="cafe_orbit" data-orbit>
+        <li>
+          <%= image_tag('cafe_diner.JPG', alt: 'slide 1') %>
+          <div class="orbit-caption">
+            Steak Dinner Test
+          </div>
+           <li>
+          <%= image_tag('cafe_diner.JPG', alt: 'slide 2') %>
+          <img src="http://lorempixel.com/output/food-q-c-500-375-10.jpg">
+          <div class="orbit-caption">
+            Steak Dinner Test Two
+          </div>
+        </li>
+        </li>
+      </ul>
+      <p>If there is a place where the spirit of the Yosemite Bug resides, it must be the June Bug Cafe. In addition to the excellent foods and sincere service we have on offer for you, this is where gatherings with music, games, chatter, laughter, openness and interaction all come together. This restaurant would not be what it is without the blend of fresh foods and international humanity. The cozy mountain lodge surroundings, taps, family style dining and open kitchen surely help. </p>
+      <b> Fill In Comments? </b>
+    </div>
+  </div>
+      <div class="class large-12 columns">
+    <div class="class large-5 columns">
+      Lunch
      <table>
       <thead>
         <tr>
@@ -12,18 +82,18 @@
       </thead>
 
       <tbody>
-        <% @breakfast.each do |b| %>
+        <% @lunch.each do |l| %>
         <tr>
-          <td><%= b.item %></td>
-          <td><%= b.description.html_safe %></td>
-          <td><%= b.price %></td>
+          <td><%= l.item %></td>
+          <td><%= l.description.html_safe %></td>
+          <td><%= l.price %></td>
         </tr>
         <% end %>
       </tbody>
 </table>
     </div>
     <div class="class large-7 columns">
-      Carousel of Images
+      Carousel of Lunch Images
       <ul class="cafe_orbit" data-orbit>
         <li>
           <%= image_tag('cafe_diner.JPG', alt: 'slide 1') %>
@@ -40,75 +110,35 @@
         </li>
       </ul>
     </div>
+    <p>Talia and her talented team make the true effort that has clearly put the Cafe at the top of it's game. We also now have a full lunch menu, homemade pies, local produce, our own dressings, & full children's menus. But most importantly: the love of food. </p>
+
   </div>
 
-  <div class="class large-12 columns">
-    <div class="row">
-      Breakfast
-      <% @breakfast.each do |b| %>
-      <%= b.item %>
-      <% end %>
-    </div>
-    <div class="row">
-      Description
-    </div>
-    <div class="row">
-      Carousel of Images
-      <ul class="cafe_orbit" data-orbit>
-        <li>
-          <%= image_tag('cafe_diner.JPG', alt: 'slide 1') %>
-          <div class="orbit-caption">
-            Steak Dinner Test
-          </div>
-           <li>
-          <%#= image_tag('cafe_diner.JPG', alt: 'slide 2') %>
-          <img src="http://lorempixel.com/output/food-q-c-500-375-10.jpg">
-          <div class="orbit-caption">
-            Steak Dinner Test Two
-          </div>
-        </li>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-    <div class="class large-12 columns">
-    <div class="row">
-      Lunch
-
-    </div>
-    <div class="row">
-      Description
-    </div>
-    <div class="row">
-      Carousel of Images
-      <ul class="cafe_orbit" data-orbit>
-        <li>
-          <%= image_tag('cafe_diner.JPG', alt: 'slide 1') %>
-          <div class="orbit-caption">
-            Steak Dinner Test
-          </div>
-           <li>
-            <img src="http://lorempixel.com/output/food-q-c-500-375-2.jpg">
-          <%#= image_tag('cafe_diner.JPG', alt: 'slide 2') %>
-          <div class="orbit-caption">
-            Steak Dinner Test Two
-          </div>
-        </li>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="class large-12 columns">
-    <div class="row">
+        <div class="class large-12 columns">
+    <div class="class large-5 columns">
       Dinner
+     <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @dinner.each do |d| %>
+        <tr>
+          <td><%= d.item %></td>
+          <td><%= d.description.html_safe %></td>
+          <td><%= d.price %></td>
+        </tr>
+        <% end %>
+      </tbody>
+</table>
     </div>
-    <div class="row">
-      Description
-    </div>
-    <div class="row">
-      Carousel of Images
+    <div class="class large-7 columns">
+      Carousel of Dinner Images
       <ul class="cafe_orbit" data-orbit>
         <li>
           <%= image_tag('cafe_diner.JPG', alt: 'slide 1') %>
@@ -117,6 +147,7 @@
           </div>
            <li>
           <%= image_tag('cafe_diner.JPG', alt: 'slide 2') %>
+          <img src="http://lorempixel.com/output/food-q-c-500-375-10.jpg">
           <div class="orbit-caption">
             Steak Dinner Test Two
           </div>
@@ -124,5 +155,8 @@
         </li>
       </ul>
     </div>
+    <p>Please stop in whether guest or no, we have been open 16 years, every day. every meal, every natural disaster...</p>
+
   </div>
+
 </div>
