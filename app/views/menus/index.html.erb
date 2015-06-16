@@ -1,3 +1,4 @@
+<%= render 'home/navbar' %>
 <h1>Menu Items</h1>
 
 <table>
@@ -11,13 +12,20 @@
   </thead>
 
   <tbody>
-    <% @menus.each do |m| %>
+    <% @menus.each do |menu| %>
     <tr>
-      <td><%= m.item %></td>
-      <td><%= m.description %></td>
-      <td><%= m.price %></td>
-      <td><%= m.meal %></td>
+      <td><%= menu.item %></td>
+      <td><%= menu.description.html_safe %></td>
+      <td><%= menu.price %></td>
+      <td><%= menu.meal %></td>
+      <td><%= link_to 'Show', menu if policy(menu).show? %></td>
+      <td><%= link_to 'Edit', edit_menu_path(menu) if policy(menu).edit? %></td>
+      <td><%= link_to 'Destroy', menu, method: :delete, data: { confirm: 'Are you sure?' } if policy(menu).destroy? %></td>
     </tr>
     <% end %>
   </tbody>
 </table>
+<% if policy(Menu).new? %>
+  <%= link_to 'New Menu Item', new_menu_path %>
+<% end %>
+<%= render 'home/footer' %>
