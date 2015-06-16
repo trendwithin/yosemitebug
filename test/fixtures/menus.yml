@@ -2,18 +2,24 @@
 # http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 breakfast:
+  id: 1
+  user_id: 1
   item: Bacon and Eggs
   description: Local Boar Bacon with Free Range Fliers
   price: $6.95
   meal: breakfast
 
 lunch:
+  id: 2
+  user_id: 1
   item: Trail Sammy
   description: Individually wrapped items to pack for trail...
   price: $8.95
   meal: lunch
 
 dinner:
+  id: 3
+  user_id: 1
   item: Pan Fried Trout
   description: Pan fried panko crusted trout with....
   price: $16.95
