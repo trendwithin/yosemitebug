@@ -1,19 +1,29 @@
  <div class="row">
   <div class="large-3 columns">
+    <%= image_tag('buglogo.png', alt: 'Logo', 'data-interchange' => "[#{image_path('buglogo.png')}, (retina)]") %></h1>
     <h1><%= image_tag('new_logo.png', alt: 'Logo', 'data-interchange' => "[#{image_path('new_logo.png')}, (retina)]") %></h1>
   </div>
     <div class="large-9 columns right">
         <div class="row collapse">
           <div class="large-10 small-8 columns">
             <p>
-            Tucked away on its own bend along the stream, perched under a grove of black oaks,
-            the Yosemite Bug Rustic Mountain Resort has a magical feel. Located only
-            26 miles away from Yosemite Valley along California's scenic,
-            open all year Highway 140. The Bug offers a relaxed and social
-            atmosphere where families, backpackers and international travelers
-            all find welcome and a variety of affordable accomodations and amenities
-            an old time mountain resort would have.
-          </p>
+            Underneath the forest canopy, the <strong>Yosemite Bug Rustic Mountain Resort</strong> has many cabins perched around the hillside with may
+            types of accommodation for all kinds of travelers.  The exciting private rooms are all individually decorated with new,
+            antique and restored furnishings & goods.
+            These rooms sport white cotton fresh duvets, towels and other hotel amenities.
+            Some duplex cabins are sold as family cabins or rooms with a shared bath.
+            </p>
+            <p>
+            Traditional gold rush era tent cabins have furnishings and linens.
+            Nearby are nice camping bathrooms, showers, guest kitchen and laundry for those who like
+            to travel simply and hear the breeze at night.  Parking is free in three hillside lots.
+            </p>
+            <p>
+            Our <strong>Hostelling International</strong> hostel dormitories are clean, bright with a nice functional
+            decor for backpackers and groups of all kinds.  Lastly Our two vacation rentals are best for
+            family or friend get togethers where you can gather for fun and cook in your own kitchens.
+            <a href="#">Click into the secure booking engine now!</a>
+            </p>
           </div>
 
           <div class="large-2 small-4 columns">
@@ -26,57 +36,153 @@
 <div class="row">
   <hr>
   <div class="large-2 columns">
-    <%= image_tag 'rooms/thumbs/thumb_AnselDormImageLodgingCarousel.jpg', alt: 'Image' %>
-    <br> <br>
+    Private
     <%= image_tag 'rooms/thumbs/thumb_bear_min.jpg', alt: 'Image' %>
     <br> <br>
-    <%= image_tag 'rooms/thumbs/thumb_ChilnualnaFallsBLodgingImageCarsousel.jpg', alt: 'Image' %>
+    Private Shared
+    <%= image_tag 'rooms/thumbs/thumb_MonoLakeA.jpg', alt: 'Image' %>
     <br> <br>
-    <%= image_tag 'rooms/thumbs/thumb_PrivateRoomCommunalBathImageLodgingCarousel.jpg', alt: 'Image' %>
+    Private Room
+    <%= image_tag 'rooms/thumbs/thumb_SolomonA.jpg', alt: 'Image' %>
+    <br> <br>
+
   </div>
 
-  <div class="large-7 columns">
+  <div class="large-8 columns">
     <div class="orbit-container">
       <ul class="private_rooms_orbit" data-orbit data-options="pause_on_hover:false; timer_speed:3000;">
-        <li>
-          <%= image_tag('cafe_diner.JPG', alt: 'slide 1') %>
+        <li class="active">
+          <%= image_tag('rooms/AnselDormImageLodgingCarousel.jpg', alt: 'slide 1') %>
           <div class="orbit-caption">
-          Bear.
-          </div>
-        </li>
-          <li class="active">
-          <%= image_tag('valey.JPG', alt: 'slide 2') %>
-          <div class="orbit-caption">
-          Mono.
+          Ansel Dorm
           </div>
         </li>
         <li>
-          <%= image_tag('spa.JPG', alt: 'slide 3') %>
+          <%= image_tag('rooms/bear_min.jpg', alt: 'slide 1') %>
           <div class="orbit-caption">
-          Caption Three.
+          Bear A
+          </div>
+        </li>
+          <li>
+          <%= image_tag('rooms/ChilnualnaFallsBLodgingImageCarsousel.jpg', alt: 'slide 2') %>
+          <div class="orbit-caption">
+          Tent Cabin
+          </div>
+        </li>
+        <li>
+          <%= image_tag('rooms/DormCabinExtImageLodgingCarousel.jpg', alt: 'slide 3') %>
+          <div class="orbit-caption">
+          Dorm Cabin Exterior
+          </div>
+        </li>
+         <li>
+          <%= image_tag('rooms/HorsetailFallsAImageLOdgingCarousel.jpg', alt: 'slide 3') %>
+          <div class="orbit-caption">
+          Tent Cabin
+          </div>
+        </li>
+         <li>
+          <%= image_tag('rooms/HorsetailFallsBxLodgingImageCarousel.jpg', alt: 'slide 3') %>
+          <div class="orbit-caption">
+          Tent Cabin
+          </div>
+        </li>
+         <li>
+          <%= image_tag('rooms/MonoLakeALodgingCarouselImage.jpg', alt: 'slide 3') %>
+          <div class="orbit-caption">
+          Mono Lake A
+          </div>
+        </li>
+         <li>
+          <%= image_tag('rooms/MonoLakeBxLodgingImageCarousel.jpg', alt: 'slide 3') %>
+          <div class="orbit-caption">
+          Mono Lake B
+          </div>
+        </li>
+         <li>
+          <%= image_tag('rooms/PrivateRoomCabinImageCarsousel.jpg', alt: 'slide 3') %>
+          <div class="orbit-caption">
+          Private Room Cabin
+          </div>
+        </li>
+         <li>
+          <%= image_tag('rooms/PrivateRoomCommunalBathImageLodgingCarousel.jpg', alt: 'slide 3') %>
+          <div class="orbit-caption">
+          Private Shared Bath
+          </div>
+        </li>
+         <li>
+          <%= image_tag('rooms/SolomonMineAlodgingimagecarousel.jpg', alt: 'slide 3') %>
+          <div class="orbit-caption">
+          Solomon Mine A
+          </div>
+        </li>
+         <li>
+          <%= image_tag('rooms/SolomonMineBlodgingimage carousel.jpg', alt: 'slide 3') %>
+          <div class="orbit-caption">
+          Solomon Mine B
+          </div>
+        </li>
+         <li>
+          <%= image_tag('rooms/SweetwaterMineBxLodgingImageCarousel.jpg', alt: 'slide 3') %>
+          <div class="orbit-caption">
+          Sweetwater Mine A
+          </div>
+        </li>
+         <li>
+          <%= image_tag('rooms/TentCabinExtLodgingImageCarousel.jpg', alt: 'slide 3') %>
+          <div class="orbit-caption">
+          Tent Cabin Exterior
+          </div>
+        </li>
+          <li>
+          <%= image_tag('rooms/TentCabinRegularFamLodgingImageCarousel.jpg', alt: 'slide 3') %>
+          <div class="orbit-caption">
+          Tent Cabin Family
+          </div>
+        </li>
+          <li>
+          <%= image_tag('rooms/WawonaAxLodgingImageCarousel.jpg', alt: 'slide 3') %>
+          <div class="orbit-caption">
+          Wawona A
+          </div>
+        </li>
+          <li>
+          <%= image_tag('rooms/WawonaBxLodgingCarousel.jpg', alt: 'slide 3') %>
+          <div class="orbit-caption">
+          Wawona B
+          </div>
+        </li>
+          <li>
+          <%= image_tag('rooms/YosemiteBugLodgingCarousel.jpg', alt: 'slide 3') %>
+          <div class="orbit-caption">
+          Lodge
           </div>
         </li>
       </ul>
     </div>
   </div>
 
-  <div class="large-3 columns">
-    <h4>Some Content</h4>
-    <div class="panel">
-      This is a Panel-
-    </div>
-
+  <div class="large-2 columns">
+    Tent Cabin
+    <%= image_tag 'rooms/thumbs/thumb_ChilnualnaFallsBLodgingImageCarsousel.jpg', alt: 'Image' %>
+    <br> <br>
+    Dorm
+    <%= image_tag 'rooms/thumbs/thumb_AnselDormImageLodgingCarousel.jpg', alt: 'Image' %>
+    <br> <br>
+    Private Share
+    <%= image_tag 'rooms/thumbs/thumb_PrivateRoomCommunalBathImageLodgingCarousel.jpg', alt: 'Image' %>
   </div>
-  </div>
+</div>
 
   <div class="row">
   <hr/>
     <div class="large-6 columns">
-    <h4>This is a content section placeholder</h4>
+    <h4>Maybe Add Blog Section Here Then</h4>
 
   </div>
   <div class="large-6 columns">
-    <h4>Content Section Place Holder</h4>
+    <h4>Add Tweets Here</h4>
   </div>
 
   </div>
@@ -88,19 +194,20 @@
     <h4>You might also like:</h4>
     <div class="class large-3 columns">
       <%= image_tag('rooms/thumbs/thumb_lodging.jpg', alt: '') %>
-      Lodging
-    </div>
-       <div class="class large-3 columns">
-      <%= image_tag('rooms/thumbs/thumb_cafe.jpg', alt: '') %>
       Cafe
     </div>
-       <div class="class large-3 columns">
+     <div class="class large-3 columns">
       <%= image_tag('rooms/thumbs/thumb_spa.jpg', alt: '') %>
       Spa
     </div>
        <div class="class large-3 columns">
-      <img src="http://lorempixel.com/output/nature-q-c-200-150-8.jpg">
-      Book Us
+      <%= image_tag('rooms/thumbs/thumb_cafe.jpg', alt: '') %>
+      Groups
+    </div>
+
+       <div class="class large-3 columns">
+      <%= image_tag('rooms/thumbs/google_bug.png') %>
+      Getting Here
     </div>
   </div>
 </div>
