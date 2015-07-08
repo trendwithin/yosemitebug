@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'spas/index'
+
   resources :menus
   devise_for :users
   get 'tweet_feed/index'
