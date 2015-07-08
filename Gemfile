@@ -19,6 +19,7 @@ gem 'feedjira', '~> 1.6.0'
 gem 'twitter', '~> 5.14.0'
 gem 'omniauth-twitter', '~> 1.2.0'
 gem 'twitter-text', '~> 1.12.0'
+gem 'jquery-turbolinks', '~> 2.1.0'
 
 gem 'rails_12factor', group: :production
 
