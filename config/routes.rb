@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'activities/spring'
+
+  get 'activities/summer'
+
+  get 'activities/autumn'
+
+  get 'activities/winter'
+
   get 'spas/index'
 
   resources :menus
