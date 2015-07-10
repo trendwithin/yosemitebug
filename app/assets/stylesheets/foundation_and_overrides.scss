@@ -90,7 +90,7 @@ $include-html-global-classes: $include-html-classes;
 // $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
-
+$font-family-sans-serif: Courier, Tahoma, Geneva, sans-serif;
 // We use these to define default font weights
 // $font-weight-normal: normal;
 // $font-weight-bold: bold;
@@ -103,7 +103,10 @@ $include-html-global-classes: $include-html-classes;
 // $silver      : #EFEFEF;
 // $smoke       : #EEEEEE;
 // $gainsboro   : #DDDDDD;
-// $iron        : #CCCCCC;
+$iron        : #CCCCCC;
+$mellow-yellow: #F8F5C2;
+$sage: #909b86;
+$sand: #bdb682;
 // $base        : #AAAAAA;
 // $aluminum    : #999999;
 // $jumbo       : #888888;
@@ -991,12 +994,20 @@ $include-html-global-classes: $include-html-classes;
 // $panel-border-size: 1px;
 // $callout-panel-bg: scale-color($primary-color, $lightness: 94%);
 
+// We use these to control the background and border styles
+$panel-bg: scale-color($mellow-yellow, $lightness: -5%);
+// $panel-border-style: solid;
+// $panel-border-size: 1px;
+// $callout-panel-bg: scale-color($primary-color, $lightness: 94%);
+
 // We use this % to control how much we darken things on hover
 // $panel-border-color: scale-color($panel-bg, $lightness: -11%);
 
 // We use these to set default inner padding and bottom margin
 // $panel-margin-bottom: rem-calc(20);
 // $panel-padding: rem-calc(20);
+$panel-margin-bottom: .25rem;
+$panel-padding: .5rem;
 
 // We use these to set default font colors
 // $panel-font-color: $oil;
