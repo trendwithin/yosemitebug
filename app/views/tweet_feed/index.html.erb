@@ -1,6 +1,9 @@
+<div class="panel">Recent <%= @timeline.first.user.screen_name %> Tweets:</div>
 <% @timeline.each do |tweet| %>
+<div class= "panel tweet radius">
 <%= auto_link(tweet.text, :target => '_blank').html_safe %>
 &mdash; @<%= tweet.user.screen_name %> <br>
+</div>
 <% end %>
 
 <br>

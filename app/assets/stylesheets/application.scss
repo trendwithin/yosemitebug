@@ -17,10 +17,10 @@
  */
 @import "foundation_and_overrides";
 body{
-  background: $sage;
+  background: $elcap-grey;
 }
 .top-bar{
-  background: #999999;
+  background: #4f71cb;
 }
 .dropdown{
   background: #44aaff;
@@ -29,17 +29,85 @@ body{
  background: #44aaff;
 }
 .panel{
-  background: $sand;
-
+  border-color: $granite-grey;
+  border-size: 2px;
+  top: -1.00rem;
+  margin: auto;
+  font-weight: 900;
+}
+.panel {
+  background-color: $shade-grey;
 }
 .panel img {
   float: right;
 }
+.main img {
+  float: left;
+  margin-right: .5rem;
+}
 
+.lodgingpanel{
+  background-color: #2baec1;
+  height: 350px;
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+}
+.lodgingpanel h1{
+  color: white;
+  font-weight: 900;
+  text-align: center;
+}
+.lodgingpanel p {
+  color: white;
+}
+.lodgingpanel a {
+  color: black;
+}
+.peruse {
+  text-align: center;
+}
+.tent_rooms_orbit{
+  background-color: #2baec1;
+  padding-right: 0;
+  margin-right: 0;
+}
+.homebody {
+  background-color: #2baec1;
+  color: white;
+  height: 325px;
+}
+.container .homebody {
+  font-weight: 600;
+  justify-content: center;
+  justify-direction: column;
+  height: 325px;
+  padding-bottom: 1.00rem;
+  margin-bottom: .25rem;
+}
+
+.homebody img {
+  float: right;
+  padding-right: 0;
+  margin-right: 0;
+  height: 100%;
+}
+.homebody h1 {
+  color: white;
+  font-weight: 900;
+  text-align: center;
+}
+.container .background{
+  background-image: image-url("social.png");
+  height: 500px;
+  margin-bottom: 2.0rem;
+  padding-bottom: 1.0rem;
+}
 .header.panel {
   margin: 3rem auto;
   border: 2px solid #444;
   background: #fff;
+  font-weight: 20;
 }
 .sign {
     background: $iron;
@@ -47,9 +115,16 @@ body{
     height: 2.4rem;
     border: 2px solid #444;
     position: relative;
-    top: -1.3rem;
+    top: -.50rem;
     margin: auto;
     font: bold;
+    text-align: center;
+}
+
+.tweet {
+  background: $sand;
+  font: Helvetica;
+  font-weight: 500;
 }
 .group:before, .group:after {
   content: "";

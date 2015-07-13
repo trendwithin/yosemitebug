@@ -1,0 +1,90 @@
+<div class="row">
+  <div class="large-12 medium-12 columns main">
+     <h1><%= image_tag('new_logo.png', alt: 'Logo', 'data-interchange' => "[#{image_path('new_logo.png')}, (retina)]") %></h1>
+     <p>
+      Tucked away on its own bend along the stream, perched under a grove of black oaks,
+      the Yosemite Bug Rustic Mountain Resort has a magical feel. Located only
+      26 miles away from Yosemite Valley along California's scenic,
+      open all year Highway 140. The Bug offers a relaxed and social
+      atmosphere where families, backpackers and international travelers
+      all find welcome and a variety of affordable accomodations and amenities
+      an old time mountain resort would have.
+     </p>
+     <p>
+      <b>"One of our favorite places to stay..."</b>
+       <a href="http://www.latimes.com/travel/la-tr-d-escape-yosemite-20150705-story.html">LA Times July 4, 2015</a>
+     </p>
+  </div>
+      <div class="large-12 columns">
+     <%= image_tag('social.png', alt: 'Logo', 'data-interchange' => "[#{image_path('social.png')}, (retina)]") %>
+    </div>
+</div>
+<hr />
+
+<div class="row">
+  <div class="container">
+    <div class="large-6 medium-6 columns homebody">
+      <h1>Value</h1>
+      <p>At the Bug we feature a variety of lodgings to suit any budget.
+        From well appointed private rooms in cabins, vacation rentals,
+        to tent cabins and Hostelling International licensed hostel dorms.</p>
+    </div>
+
+    <div class="large-6 medium-6 columns homebody clear-fix">
+      <%= image_tag('rooms/MonoLakeBxLodgingImageCarousel.jpg', alt: 'Logo', 'data-interchange' => "[#{image_path('rooms/MonoLakeBxLodgingImageCarousel.jpg')}, (retina)]") %>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="container">
+    <div class="large-6 medium-6 columns homebody">
+      <h1>Quality</h1>
+      <p>At the Bug we continue to focus upon the freshest fare with quatily ingredients
+        We do our best to source locally, including our own garden.</p>
+    </div>
+
+    <div class="large-6 medium-6 columns homebody clear-fix">
+      <%= image_tag('garden.png', alt: 'Logo', 'data-interchange' => "[#{image_path('garden.png')}, (retina)]") %>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="container">
+    <div class="large-6 medium-6 columns homebody">
+      <h1>Rejuvinate</h1>
+      <p>The Yosemite Health Spa provides a beautiful and relaxing atmosphere for
+        travelers to restore their bodies after their adventures in the area</p>
+    </div>
+
+    <div class="large-6 medium-6 columns homebody clear-fix">
+      <%= image_tag('garden.png', alt: 'Logo', 'data-interchange' => "[#{image_path('garden.png')}, (retina)]") %>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns">
+    <h4>Latest News:</h4>
+    <div class="panel">
+      <h5> <%= @article.title %> </h5>
+      <h6 class="subheader"> <%= truncate( @article.content, length: 800, separator: " ", :escape => false) %> </h6>
+      <a href="#" class="small button">Read More</a>
+    </div>
+  </div>
+  <div class="large-6 medium-6 columns">
+    <h4>Recent Tweets:</h4>
+     <p><%= render :template => 'tweet_feed/index' %></p>
+  </div>
+</div>
+
+<div class="row">
+<hr>
+  <div class="large-12 columns">
+    <h4>You might also like:</h4>
+    <img src="http://lorempixel.com/output/nature-q-c-200-150-8.jpg">
+    <img src="http://lorempixel.com/output/nature-q-c-200-150-8.jpg">
+    <img src="http://lorempixel.com/output/nature-q-c-200-150-8.jpg">
+    <img src="http://lorempixel.com/output/nature-q-c-200-150-8.jpg">
+  </div>
+</div>
