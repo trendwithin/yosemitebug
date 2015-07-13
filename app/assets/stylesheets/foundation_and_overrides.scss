@@ -107,6 +107,11 @@ $iron        : #CCCCCC;
 $mellow-yellow: #F8F5C2;
 $sage: #909b86;
 $sand: #bdb682;
+$light-sand: #dad295;
+$yosemite-sky: #97b0e9;
+$elcap-grey: #e7e7e8;
+$granite-grey: #8fa3c8;
+$shade-grey: #e3d9cd;
 // $base        : #AAAAAA;
 // $aluminum    : #999999;
 // $jumbo       : #888888;
@@ -143,7 +148,7 @@ $sand: #bdb682;
 // $last-child-float: $opposite-direction;
 
 // We use these to make sure border radius matches unless we want it different.
-// $global-radius: 3px;
+$global-radius: 5px;
 // $global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.
