@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'groups/index'
+
   get 'activities/spring'
 
   get 'activities/summer'
