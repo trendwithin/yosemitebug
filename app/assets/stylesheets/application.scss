@@ -17,7 +17,9 @@
  */
 @import "foundation_and_overrides";
 body{
-  background: $elcap-grey;
+  //background: $elcap-grey;
+  background: rgba(199, 233, 255, 0.5);
+  font-family: 'Lora', serif;
 }
 .top-bar{
   background: #4f71cb;
@@ -36,10 +38,18 @@ body{
   font-weight: 900;
 }
 .panel {
-  background-color: $shade-grey;
+  //background-color: $shade-grey;
+  background-color: rgba(199, 233, 255, 0.5);
 }
 .panel img {
   float: right;
+}
+.bg {
+  // background-color: #2baec1;
+  // color: white;
+  //background-color: rgba(17, 84, 127, 0.5);
+  background-color: rgba(110, 197, 255, 0.5);
+  color: black;
 }
 .main img {
   float: left;
@@ -135,4 +145,15 @@ clear: both;
 }
 .group {
 zoom: 1; /* IE6&7 */
+}
+
+
+.bottom {
+  vertical-align: test-bottom;
+  float: right;
+}
+
+.index_page img{
+  width: 100%;
+  height: auto;
 }

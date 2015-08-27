@@ -1,0 +1,69 @@
+<!-- Top Blurb -->
+<div class="container">
+  <div class="row">
+    <div class="class large-12 columns main">
+    <h1><%= image_tag('buglogo.png', alt: 'Logo',
+        'data-interchange' => "[#{image_path('buglogo.png')}, (retina)]") %></h1>
+      <span class="hide-for-small-only show-for-medium-up">
+        <b>"One of our favorite places to stay..."</b> <br />
+      <a href="http://www.latimes.com/travel/la-tr-d-escape-yosemite-20150705-story.html">
+      LA Times July 4, 2015</a>
+      </span>
+      <span class="show-for-small-only bottom">
+        <br ><br >
+      <b>"One of our favorite places to stay..."</b>
+      <a href="http://www.latimes.com/travel/la-tr-d-escape-yosemite-20150705-story.html">
+      LA Times July 4, 2015</a>
+      </span>
+    </div>
+  </div>
+</div>
+<hr />
+
+<!-- Carousel for Rooms -->
+<div class="container">
+  <div class="row panel bg">
+    <div class="medium-10 large-10 large-push-2 columns">
+      <%= render 'orbit' %>
+      <hr />
+    </div>
+    <!-- Carousel Side Nav -->
+    <div class="class medium-2 large-2 large-pull-10 columns">
+      <div class="row">
+        <span>Cafe</span>
+        <%= image_tag('index_page_images/CAFECOVERsm.jpg', alt: 'June Bug Cafe') %>
+        <hr />
+      </div>
+      <div class="row">
+        <span>Groups</span>
+        <%= image_tag('index_page_images/GROUPSCOVERsm.jpg', alt: 'Yosemite Bug Groups') %>
+        <hr />
+      </div>
+      <div class="row">
+        <span>Health Spa</span>
+        <%= image_tag('index_page_images/SPACOVERsm.jpg', alt: 'Yosemite Bug Health Spa') %>
+        <hr />
+      </div>
+      <div class="row">
+        <span>Directions</span>
+        <%= image_tag('rooms/thumbs/google_bug.png') %>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<!-- Blog and Tweets -->
+<div class="row">
+  <div class="large-6 medium-6 columns">
+    <h4>Latest News:</h4>
+    <div class="panel">
+      <h5> <%= @article.title %> </h5>
+      <h6 class="subheader"> <%= truncate( @article.content, length: 800, separator: " ", :escape => false) %> </h6>
+      <a href="#" class="small button">Read More</a>
+    </div>
+  </div>
+  <div class="large-6 medium-6 columns">
+    <h4>Recent Tweets:</h4>
+    <p><%= render :template => 'tweet_feed/index' %></p>
+  </div>
+</div>
