@@ -1,119 +1,176 @@
-    <div class="class large-12 columns">
-      <div class="class large-5 columns">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!</p>
-<p>Ad dolore dignissimos asperiores dicta facere optio quod commodi nam tempore recusandae. Rerum sed nulla eum vero expedita ex delectus voluptates rem at neque quos facere sequi unde optio aliquam!</p>
-<p>Tenetur quod quidem in voluptatem corporis dolorum dicta sit pariatur porro quaerat autem ipsam odit quam beatae tempora quibusdam illum! Modi velit odio nam nulla unde amet odit pariatur at!</p>
-<p>Consequatur rerum amet fuga expedita sunt et tempora saepe? Iusto nihil explicabo perferendis quos provident delectus ducimus necessitatibus reiciendis optio tempora unde earum doloremque commodi laudantium ad nulla vel odio?</p>
-
-    </div>
-    <div class="class large-7 columns">
-
-      <b>Some Comment About Private Rooms</b>
-      <div class="orbit-container">
-        <ul class="private_rooms_orbit" data-orbit data-options="pause_on_hover:false; timer_speed:3000;">
-          <li>
-             <%= image_tag('rooms/bear_min.jpg', alt: 'slide 1') %>
-            <div class="orbit-caption">
-              Bear.
-            </div>
-          </li>
-          <li class="active">
-            <%= image_tag('rooms/MonoLakeALodgingCarouselImage.jpg', alt: 'slide 2') %>
-            <div class="orbit-caption">
-              Mono.
-            </div>
-          </li>
-          <li>
-            <%= image_tag('rooms/MonoLakeBxLodgingImageCarousel.jpg', alt: 'slide 3') %>
-            <div class="orbit-caption">
-              Caption Three.
-            </div>
-          </li>
-        </ul>
-      </div>
-      <p>Some Paragraph or Inforamtion Here?</p>
-      <b> Fill In Comments? </b>
+<div class="container">
+  <div class="row">
+    <div class="large-12">
+      <center> <h1>Panorama Placeholder</h1> </center>
     </div>
   </div>
+</div>
 
-    <div class="class large-12 columns">
-
-    <div class="class large-7 columns">
-      Carousel of Dorm Room Images:
-      <b>Some Comment About Private Rooms</b>
+<!-- Private Rooms -->
+<div class="container">
+  <div class="row">
+    <div class="medium-9 large-9 large-push-3 columns">
       <div class="orbit-container">
-        <ul class="private_share_rooms_orbit" data-orbit>
-          <li>
-             <%= image_tag('rooms/DormCabinExtImageLodgingCarousel.jpg', alt: 'slide 1') %>
-            <div class="orbit-caption">
-              Bear.
-            </div>
-          </li>
-          <li class="active">
-            <%= image_tag('rooms/AnselDormImageLodgingCarousel.jpg', alt: 'slide 2') %>
-            <div class="orbit-caption">
-              Mono.
-            </div>
-          </li>
-          <li>
-            <%= image_tag('rooms/MonoLakeBxLodgingImageCarousel.jpg', alt: 'slide 3') %>
-            <div class="orbit-caption">
-              Caption Three.
-            </div>
-          </li>
-        </ul>
+        <%= render 'lodging_private_orbit' %>
       </div>
-      <p>Some Paragraph or Inforamtion Here?</p>
-      <b> Fill In Comments? </b>
     </div>
-          <div class="class large-5 columns">
-        Dorms?-  Descriptions Place Holder
-
+   <div class="class medium-3 large-3 large-pull-9 columns">
+      <p>
+      Hotel standard all individually themed with rich decor.
+      Our private rooms are in duplex cabins and have a variety of bed
+      arrangements in the booking setup.  Amenities include memory
+      foam mattresses, down white duvet covered comforters and bath linens,
+      shampoo, lotion & Dr Bronner dispensers, small fridges, half closet with
+      hangers, showers, some baths, hair dryers, rich old refinished & new decor,
+      decks with chairs, lamps, clocks, heating & cooling, baggage racks,
+      soft chairs & daily housekeeping.  There is internet signal but no TV’s
+      or phones.  Book whole cabin for family of eight.
+      </p>
     </div>
   </div>
-
-  <div class="class large-12 columns">
-    <div class="class large-5 columns">
-    Tent Cabins Descriptions Place Holder
-    </div>
-    <div class="class large-7 columns">
-      Carousel of Tent Room Images:
-      <b>Some Comment About Tent Rooms</b>
+</div>
+<hr>
+<!-- Private Shared -->
+<div class="container">
+  <div class="row">
+    <div class="medium-9 large-9 columns">
       <div class="orbit-container">
-        <ul class="tent_rooms_orbit" data-orbit>
-          <li>
-           <%= image_tag('rooms/HorsetailFallsAImageLOdgingCarousel.jpg', alt: 'slide 1') %>
-            <div class="orbit-caption">
-              HorseTail A.
-            </div>
-          </li>
-        <li class="active">
-          <%= image_tag('rooms/HorsetailFallsBxLodgingImageCarousel.jpg', alt: 'slide 2') %>
-            <div class="orbit-caption">
-              HorseTail B.
-            </div>
-        </li>
-        <li>
-          <%= image_tag('rooms/ChilnualnaFallsBLodgingImageCarsousel.jpg', alt: 'slide 3') %>
-          <div class="orbit-caption">
-            Chill.
-          </div>
-        </li>
-        <li>
-          <%= image_tag('rooms/TentCabinExtLodgingImageCarousel.jpg', alt: 'slide 3') %>
-          <div class="orbit-caption">
-            Chill.
-          </div>
-        </li>
-        <li>
-          <%= image_tag('rooms/TentCabinRegularFamLodgingImageCarousel.jpg', alt: 'slide 3') %>
-          <div class="orbit-caption">
-            Chill.
-          </div>
-        </li>
-        </ul>
+        <%= render 'lodging_shared_orbit' %>
       </div>
-      <p>Some Paragraph or Inforamtion Here?</p>
-      <b> Fill In Comments? </b>
+    </div>
+   <div class="class medium-3 large-3 columns">
+      <p>
+      PRIVATE ROOMS SHARED BATHS
+      Old European private standard for less.  These private rooms are in family
+      cabins and also have a variety of bed arrangements.  The are a bit smaller
+      and the quads have bunk beds.  The very clean bathrooms are used by only
+      the two rooms in the cabin.  Amenities include memory foam mattresses, down
+      white duvet covered comforters & bath towels, showers only, hair dryers,
+      nice refinished old & new decor, decks with chairs, lamps, clocks, heating
+      & cooling, soft chairs & daily housekeeping.  There is internet signal
+      but no TV’s or phones.  Book whole cabin for family of six.
+      </p>
     </div>
   </div>
+</div>
+<hr>
+<!-- Family Rooms -->
+<div class="container">
+  <div class="row">
+    <div class="medium-9 large-9 large-push-3 columns">
+      <div class="orbit-container">
+        <%= render 'lodging_family_orbit' %>
+      </div>
+    </div>
+   <div class="class medium-3 large-3 large-pull-9 columns">
+      <p>
+      FAMILY DORMITORY WITH SHARED BATHS
+       Inexpensive option for friends or family.  Small four person two bunk room
+       using the nice semi-private clean shared baths & laundry downstairs.  One
+       bunk has a full size bottom bunk.  Linens on beds with folded blankets,
+       towels & three day housekeeping.  Amenities include desk, chair, lamp,
+       locker, central heating and A/C.  Internet signal.
+      </p>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- Starlite and Barn-->
+<div class="container">
+  <div class="row">
+    <div class="medium-9 large-9 columns">
+      <div class="orbit-container">
+        <%= render 'lodging_starlite_orbit' %>
+      </div>
+    </div>
+   <div class="class medium-3 large-3 columns">
+      <p>
+      VACATION RENTALS
+      Perfect for family & friends who need a larger space for comraderie.
+      One house and one flat on the Starlite side of the property.  You must walk
+      a windy forested path or drive a couple of minutes to main complex.
+
+      The Starlite House is a hippy built & fully decorated three bedroom house.
+      The small In Law has a bath and full bed, the house a porch with a day bed,
+      one queen bedroom, one queen & bunk bedroom, small bath with shower downstairs
+      and large with bath upstairs.  Full kitchen, dining area, living room & laundry.
+      The country Barn Studio has a one room living kitchen dining area, a small bunk
+      room and a large queen bedroom with a small attached bath with tub shower.
+
+      Amenities include memory foam mattresses, down white duvet covered comforters
+      and bath linens, shampoo, lotion & Dr Bronner dispensers, fully stocked and
+      furnished kitchen, hangers, hair dryers, rich old refinished & new decor,
+      decks with tables & chairs, lamps, clocks, heating & cooling, baggage racks,
+      soft chairs & daily housekeeping.  There is internet signal, flat screen
+      cable TV & telephones.
+      </p>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- Dorm Rooms -->
+<div class="container">
+  <div class="row">
+    <div class="medium-9 large-9 large-push-3 columns">
+      <div class="orbit-container">
+        <%= render 'lodging_dorms_orbit' %>
+      </div>
+    </div>
+   <div class="class medium-3 large-3 large-pull-9 columns">
+      <p>
+      HOSTEL DORMITORIES
+      Whether for backpackers or groups this is the true social essence of world
+      travel.  These cabins are generally split into two rooms three bunks each
+      with semi private each shower, toilet & sink rooms.  Amenities include 24
+      hour access rooms & guest kitchen, bed linens with folded blankets, towels,
+       extra blankets, reading lights, memory foam mattresses, backpack size
+       lockers, desks & chairs, metal bunks, window shades, carpeting, cubicles,
+       heating & cooling.
+      </p>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- Heated Tent Cabins-->
+<div class="container">
+  <div class="row">
+    <div class="medium-9 large-9 columns">
+      <div class="orbit-container">
+        <%= render 'lodging_heated_tent_orbit' %>
+      </div>
+    </div>
+   <div class="class medium-3 large-3 columns">
+      <p>
+        HEATED TENT CABINS
+        This is true glamping, with real furniture, decor and heaters.
+        These small wooden framed, rubberized canvas covered tents have heating,
+        lights and electricity.  They also have a variety of of bed arrangements.
+        Semi private clean camp style bathrooms & laundry are up to 200 feet away up
+        or down hillside stairs.
+        Amenities include lit pathways, heaters, extra blankets, fans, & screen doors.
+      </p>
+    </div>
+  </div>
+</div>
+<hr>
+<!-- Tent Cabins -->
+<div class="container">
+  <div class="row">
+    <div class="medium-9 large-9 large-push-3 columns">
+      <div class="orbit-container">
+        <%= render 'lodging_tent_orbit' %>
+      </div>
+    </div>
+   <div class="class medium-3 large-3 large-pull-9 columns">
+      <p>
+    REGULAR TENT CABINS
+    Perfect inexpensive fun for California’s long warm season.
+    These small wooden framed, rubberized canvas covered tents have simple furniture,
+    heating, lights and electricity.  They also have a variety of of bed arrangements.
+    Semi private clean camp style bathrooms & laundry are up to 200 feet away up or
+    down hillside stairs.  Amenities include lit pathways, lots of extra comforters,
+    fans & screen doors.
+      </p>
+    </div>
+  </div>
+</div>
