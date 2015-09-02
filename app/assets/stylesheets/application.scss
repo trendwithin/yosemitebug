@@ -19,16 +19,21 @@
 body{
   //background: $elcap-grey;
   background: rgba(199, 233, 255, 0.5);
-  font-family: 'Lora', serif;
+  font-family: 'Baskerville', serif;
 }
 .top-bar{
   background: #4f71cb;
 }
+$topbar-height: rem-calc(100);
+
 .dropdown{
   background: #44aaff;
 }
 .top-bar-section li:not(.has-form) a:not(.button) {
  background: #44aaff;
+}
+.topbar .bookus {
+  background: red;
 }
 .panel{
   border-color: $granite-grey;
@@ -154,6 +159,10 @@ zoom: 1; /* IE6&7 */
 }
 
 .index_page img{
+  width: 100%;
+  height: auto;
+}
+.lodging_page img{
   width: 100%;
   height: auto;
 }
