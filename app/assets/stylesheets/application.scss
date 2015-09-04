@@ -29,6 +29,10 @@ $topbar-height: rem-calc(100);
 .dropdown{
   background: #44aaff;
 }
+.justify-text{
+  text-align: justify;
+  text-justify: inter-word;
+}
 .top-bar-section li:not(.has-form) a:not(.button) {
  background: #44aaff;
 }
