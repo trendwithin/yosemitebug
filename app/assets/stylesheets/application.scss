@@ -50,3 +50,28 @@ body{
   margin: auto;
   font-weight: 900;
 }
+
+// Images
+.panel img {
+  float: right;
+}
+.index_page img{
+  width: 100%;
+  height: auto;
+}
+.lodging_page img{
+  width: 100%;
+  height: auto;
+}
+
+// Group
+.group:before, .group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+clear: both;
+}
+.group {
+zoom: 1; /* IE6&7 */
+}
