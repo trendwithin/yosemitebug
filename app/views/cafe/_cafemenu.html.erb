@@ -1,0 +1,95 @@
+<div class="panel">
+  Logo
+</div>
+<div class="panel">
+  Panoramic
+</div>
+
+<div class="row">
+  <div class="large-6 columns">Deck
+    <%= render 'cafe_orbit' %>
+  </div>
+  <div class="large-6 columns">Food
+    <%= render 'cafe_meal_orbit' %></div>
+</div>
+
+<div class="panel">
+  Facebook?
+</div>
+<div class="panel">
+  Cafe Text
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    Dinner
+    <table width="100%">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @dinner.each do |d| %>
+      <tr>
+        <td><%= d.item %></td>
+        <td><%= d.description.html_safe %></td>
+        <td><%= d.price %></td>
+      </tr>
+      <% end %>
+    </tbody>
+   </table>
+  <p>Please stop in whether guest or no, we have been open 16 years, every day. every meal, every natural disaster...</p>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    Breakfast
+    <table width="100%">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @breakfast.each do |d| %>
+        <tr>
+          <td><%= d.item %></td>
+          <td><%= d.description.html_safe %></td>
+          <td><%= d.price %></td>
+        </tr>
+        <% end %>
+      </tbody>
+     </table>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    Breakfast
+     <table width="100%">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @breakfast.each do |b| %>
+        <tr>
+          <td><%= b.item %></td>
+          <td><%= b.description.html_safe %></td>
+          <td><%= b.price %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
