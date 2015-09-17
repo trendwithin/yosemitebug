@@ -47,7 +47,7 @@ Menu.create([item: 'Turkey Cobb Salad', description: 'With Avocado, Blue Cheese,
              price: '$11.00', meal: 'lunch'])
 Menu.create([item: 'Buger', description: 'Local Grass Fed Burger with standard fixings',
              price: '$11.00', meal: 'lunch'])
-Menu.create([item: 'Sandwich', description: 'Same Ingredients as To Go Available', price: '$7.00', item: 'lunch'])
+Menu.create([item: 'Sandwich', description: 'Same Ingredients as To Go Available', price: '$7.00', meal: 'lunch'])
 Menu.create([item: 'To Go Sandwich', description: 'Order during breakfast for packed trail lunches.  Ingredients are packed separately for assembly during the activities of the day.
              Choose from: Provolone, Swiss, and Avocado-- Roast Beef and Cheddar-- Hummus, Provolone, and Avocado-- Turkey and Provolone-- Ham and Swiss-- BLT.  Wheat-Nut Bread, Lettuce, Tomato, Onion, Pickles, Condiments, and an Apple.
              Also includes quality trail mix and cookies.', price: '$7.00', meal: 'lunch'])
