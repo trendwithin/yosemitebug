@@ -2,12 +2,11 @@
     <ul class="title-area">
       <li class="name">
         <h1>
-          <a href="#">
             <strong class="show-for-small-only">
-            Yosemitie Bug
+            <%= link_to 'Yostemite Bug', root_path %>
             </strong>
             <strong class="hide-for-small-only">
-              Yosemite Bug Rustic Mountain Resort
+              <%= link_to 'Yostemite Bug Rustic Mountain Resort', root_path %>
             </strong>
           </a>
       </li>
@@ -50,7 +49,7 @@
         <li class="has-dropdown">
           <a href="#">Amenities</a>
           <ul class="dropdown">
-            <li><a href="#">Lodging</a></li>
+            <li><%= link_to 'Lodgings', lodgings_index_path %></li>
             <li><%= link_to 'Cafe', cafe_index_path %></li>
             <li><%= link_to 'Spa', spas_index_path %></li>
             <li><a href="#">About</a></li>
