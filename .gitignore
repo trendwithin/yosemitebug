@@ -16,4 +16,4 @@
 /config/application.yml
 
 # Ignore images
-/app/assets/images
+# /app/assets/images
