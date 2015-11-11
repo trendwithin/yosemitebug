@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'directions/index'
   get 'groups/index'
 
   get 'activities/spring'
