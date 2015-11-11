@@ -15,6 +15,7 @@
  *= require foundation_and_overrides
 
  */
+ // table
 @import "foundation_and_overrides";
 
 
@@ -27,6 +28,22 @@
 }
 .top-bar-section ul li.bookus > a:not(.button){
   background: red;
+}
+.top-bar .name h1 a:before {
+    background-image: image-url('bug_logo_thumb.png');
+    background-repeat: no-repeat;
+    content: "";
+    display: inline-block;
+    height: 38px;
+    margin-right: 10px;
+    position: relative;
+    float: left;
+    width: 150px;
+}
+
+.logo_image{
+  // float: left;
+  align: left;
 }
 
 // Footer
