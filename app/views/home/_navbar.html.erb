@@ -1,15 +1,13 @@
  <nav class="top-bar" data-topbar>
     <ul class="title-area">
       <li class="name">
-        <h1>
-          <a href="#">
             <strong class="show-for-small-only">
-            Yosemitie Bug
+          <h2><%= link_to 'Yosemite Bug', root_path %></h2>
             </strong>
             <strong class="hide-for-small-only">
-              Yosemite Bug Rustic Mountain Resort
+                <%#= image_tag 'bug_logo_thumb.png', size: '150x80', alt: 'Logo' %>
+              <h1><%= link_to 'Yosemite Bug Rustic Mountain Resort', root_path %></h1>
             </strong>
-          </a>
       </li>
       <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
     </ul>
@@ -50,7 +48,7 @@
         <li class="has-dropdown">
           <a href="#">Amenities</a>
           <ul class="dropdown">
-            <li><a href="#">Lodging</a></li>
+            <li><%= link_to 'Lodgings', lodgings_index_path %></li>
             <li><%= link_to 'Cafe', cafe_index_path %></li>
             <li><%= link_to 'Spa', spas_index_path %></li>
             <li><a href="#">About</a></li>
