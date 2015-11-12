@@ -10,6 +10,7 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require litetooltip
  *= require_tree .
  *= require_self
  *= require foundation_and_overrides
@@ -66,6 +67,12 @@ body{
   top: -1.00rem;
   margin: auto;
   font-weight: 900;
+}
+
+image.map{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // Images
